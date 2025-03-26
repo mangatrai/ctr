@@ -536,14 +536,14 @@ GET transaction_history/_search
             }
           }
         },
-        "by_payment": {
+        "payment_methods": {
           "nested": {
-            "path": "paymentMethods",
-            "aggs": {
-              "payment_types": {
-                "terms": {
-                  "field": "paymentMethods.paymentType.keyword"
-                }
+            "path": "paymentMethods"
+          },
+          "aggs": {
+            "payment_types": {
+              "terms": {
+                "field": "paymentMethods.paymentType.keyword"
               }
             }
           }
@@ -651,22 +651,22 @@ GET transaction_history/_search
   "aggs": {
     "items": {
       "nested": {
-        "path": "transactionDetails",
-        "aggs": {
-          "by_category": {
-            "terms": {
-              "field": "transactionDetails.itemCategory.keyword"
+        "path": "transactionDetails"
+      },
+      "aggs": {
+        "by_category": {
+          "terms": {
+            "field": "transactionDetails.itemCategory.keyword"
+          },
+          "aggs": {
+            "total_quantity": {
+              "sum": {
+                "field": "transactionDetails.quantity"
+              }
             },
-            "aggs": {
-              "total_quantity": {
-                "sum": {
-                  "field": "transactionDetails.quantity"
-                }
-              },
-              "total_amount": {
-                "sum": {
-                  "field": "transactionDetails.lineTotal"
-                }
+            "total_amount": {
+              "sum": {
+                "field": "transactionDetails.lineTotal"
               }
             }
           }
@@ -791,22 +791,22 @@ GET transaction_history/_search
   "aggs": {
     "discounts": {
       "nested": {
-        "path": "priceModifiers",
-        "aggs": {
-          "by_type": {
-            "terms": {
-              "field": "priceModifiers.modifierType.keyword"
+        "path": "priceModifiers"
+      },
+      "aggs": {
+        "by_type": {
+          "terms": {
+            "field": "priceModifiers.modifierType.keyword"
+          },
+          "aggs": {
+            "total_discount": {
+              "sum": {
+                "field": "priceModifiers.amount"
+              }
             },
-            "aggs": {
-              "total_discount": {
-                "sum": {
-                  "field": "priceModifiers.amount"
-                }
-              },
-              "avg_discount": {
-                "avg": {
-                  "field": "priceModifiers.amount"
-                }
+            "avg_discount": {
+              "avg": {
+                "field": "priceModifiers.amount"
               }
             }
           }
