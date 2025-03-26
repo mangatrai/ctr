@@ -1,0 +1,291 @@
+
+{
+  "transaction": {
+          "transactionId": "714905000003",
+          "transactionType": "SALES_ORDER",
+          "source": "DIGITAL",
+          "transactionDate": "2025-02-18T06:05:11Z",
+          "transactionDetails": {
+            "totalDebits": "45.15",
+            "totalCredits": "45.15",
+            "transactionDetail": [
+              {
+                "bookAmount": "0.00",
+                "chargeType": "AUTHORIZATION",
+                "authorizationId": "P_1341289395485990912",
+                "transactionDate": "2025-02-18T06:46:00Z",
+                "paymentKey": "202502172250410834516625",
+                "amountCollected": null,
+                "requestAmount": "45.15",
+                "collectionDate": "2025-02-17T22:41:08-08:00",
+                "tenderChangeFlag": null
+              },
+              {
+                "bookAmount": "0.00",
+                "chargeType": "CHARGE",
+                "authorizationId": "P_1341289395485990912",
+                "transactionDate": "2025-02-18T07:16:00Z",
+                "paymentKey": "202502172250410834516625",
+                "amountCollected": "45.15",
+                "requestAmount": "45.15",
+                "collectionDate": "2025-02-17T23:11:00-08:00",
+                "tenderChangeFlag": null
+              }
+            ]
+          },
+          "paymentMethods": [
+            {
+              "expDate": "2030-12",
+              "cardNo": "4111110027691111",
+              "cardType": "VISA",
+              "displayCardNo": "1111",
+              "paymentKey": "202502172250410834516625",
+              "reference": {
+                "paymentReference1": "T_1341289395490185216",
+                "paymentReference2": null,
+                "paymentReference8": null,
+                "paymentReference9": null,
+                "displaySvcNo": "",
+                "customerAccountNo": null
+              }
+            }
+          ],
+          "addresses": [
+            {
+              "addressType": "SHIPPING",
+              "addressLine1": "32809 Lake Square Ct",
+              "addressLine2": "",
+              "altPickLocationId": null,
+              "altPickLocationType": null,
+              "altPickLocationPartner": null,
+              "firstName": "Ai",
+              "lastName": "Test",
+              "city": "Leesburg",
+              "state": "FL",
+              "zipCode": "34788-3988"
+            },
+            {
+              "addressType": "BILLING",
+              "addressLine1": "32809 Lake Square Ct",
+              "addressLine2": "",
+              "altPickLocationId": null,
+              "altPickLocationType": null,
+              "altPickLocationPartner": null,
+              "firstName": "Ai",
+              "lastName": "Test",
+              "city": "Leesburg",
+              "state": "FL",
+              "zipCode": "34788-3988"
+            }
+          ],
+          "associatedTransaction": null,
+          "transactionAdditionalInfo": {
+            "sourceTransactionNo": null,
+            "sellerId": "SEPHORADOTCOM",
+            "cashierNumber": null,
+            "businessDate": null,
+            "locationId": null,
+            "terminalNo": null,
+            "sequenceNo": null,
+            "tillId": null,
+            "invoiceNo": null,
+            "transactionOrigin": "iphoneAppV2.0",
+            "riskFactor": "noKnownRisk",
+            "thirdPartyOrderId": null,
+            "trackingNo": null,
+            "isGuestTransaction": "N",
+            "locale": "en_US",
+            "entryType": "API",
+            "shopperName": null,
+            "eventName": "SO_SNAPSHOT_RETURN_UPDATE",
+            "eventTimestamp": "2025-02-18T10:12:41Z",
+            "derivedStatus": "1550",
+            "derivedStatusDate": "2025-02-18T10:12:41Z",
+            "derivedStatusDesc": "Return Created"
+          },
+          "clientInfo": {
+            "clientEmailId": "50thsc@gmail.com",
+            "clientPhoneNo": "",
+            "clientLoyaltyId": "3733386729502208"
+          },
+          "lines": [
+            {
+              "itemId": "2290278",
+              "quantity": "1.00",
+              "unitPrice": "22.00",
+              "fulfillmentType": "SHIPTOHOME",
+              "shippingMethod": "3 Day: FREE",
+              "deliveryMethod": "SHP",
+              "expectedShipDate": "2025-02-18T21:59:00-08:00",
+              "expectedDeliveryDate": "2025-02-22T05:59:00Z",
+              "lineTaxes": [
+                {
+                  "tax": "0.92",
+                  "taxName": "SALESTAX",
+                  "taxCategory": "ITEMTAX",
+                  "taxType": null
+                }
+              ],
+              "priceModifiers": [
+                {
+                  "type": "DISCOUNT",
+                  "name": "sephorabranddiscount40%",
+                  "category": "PROMOTION",
+                  "promotionId": null,
+                  "amount": "8.80",
+                  "promoType": "employee"
+                }
+              ],
+              "statuses": [
+                {
+                  "statusQty": "1.00",
+                  "statusDate": "2025-02-18T10:12:41Z",
+                  "statusName": "3700.01",
+                  "statusDescription": "Return Created"
+                }
+              ],
+              "instructions": null,
+              "itemType": "Standard",
+              "lineTotal": "14.12",
+              "lineType": "",
+              "lineItemGroup": "PROD",
+              "upc": "33788721601",
+              "itemDesc": "PRO Concealer Brush #71",
+              "addresses": [
+                {
+                  "addressType": "SHIPPING",
+                  "emailId": "",
+                  "firstName": "First",
+                  "lastName": "Two",
+                  "addressLine1": "32809 Lake Square Ct",
+                  "addressLine2": "",
+                  "altPickLocationId": null,
+                  "altPickLocationType": null,
+                  "state": "FL",
+                  "zipCode": "34788-3988"
+                }
+              ],
+              "associatedTransaction": {
+                "reasonCode": null,
+                "locationId": null,
+                "terminalNo": null,
+                "sequenceNo": null,
+                "transactionId": null,
+                "sourceTransactionNo": null,
+                "businessDate": null,
+                "lineId": null
+              }
+            },
+            {
+              "itemId": "2633147",
+              "quantity": "1.00",
+              "unitPrice": "58.00",
+              "fulfillmentType": "SHIPTOHOME",
+              "shippingMethod": "3 Day: FREE",
+              "deliveryMethod": "SHP",
+              "expectedShipDate": "2025-02-18T21:59:00-08:00",
+              "expectedDeliveryDate": "2025-02-22T05:59:00Z",
+              "lineTaxes": [
+                {
+                  "tax": "2.03",
+                  "taxName": "SALESTAX",
+                  "taxCategory": "ITEMTAX",
+                  "taxType": null
+                }
+              ],
+              "priceModifiers": [
+                {
+                  "type": "DISCOUNT",
+                  "name": "MARABEAUTY50",
+                  "category": "PROMOTION",
+                  "promotionId": null,
+                  "amount": "29.00",
+                  "promoType": "employee"
+                }
+              ],
+              "statuses": [
+                {
+                  "statusQty": "1.00",
+                  "statusDate": "2025-02-18T10:12:41Z",
+                  "statusName": "3700.01",
+                  "statusDescription": "Return Created"
+                }
+              ],
+              "instructions": null,
+              "itemType": "Standard",
+              "lineTotal": "31.03",
+              "lineType": "",
+              "lineItemGroup": "PROD",
+              "upc": "000866003000498",
+              "itemDesc": "Chia + Moringa® Algae Enzyme Cleansing Oil",
+              "addresses": [
+                {
+                  "addressType": "SHIPPING",
+                  "emailId": "",
+                  "firstName": "First",
+                  "lastName": "Two",
+                  "addressLine1": "32809 Lake Square Ct",
+                  "addressLine2": "",
+                  "altPickLocationId": null,
+                  "altPickLocationType": null,
+                  "state": "FL",
+                  "zipCode": "34788-3988"
+                }
+              ],
+              "associatedTransaction": {
+                "reasonCode": null,
+                "locationId": null,
+                "terminalNo": null,
+                "sequenceNo": null,
+                "transactionId": null,
+                "sourceTransactionNo": null,
+                "businessDate": null,
+                "lineId": null
+              }
+            }
+          ],
+          "shipments": [
+            {
+              "shipmentId": "299863426",
+              "status": "1600.002",
+              "statusDate": "2025-02-18T07:06:01Z",
+              "shipmentType": "MERGEABLE",
+              "hasMergedOrders": "false",
+              "containers": [
+                {
+                  "containerNo": "S1800158",
+                  "trackingNo": "2LS06458000246",
+                  "trackingUrl": "https://tracking-st01.narvar.qa/sephora/tracking/ups?dzip=34788-3988&locale=en_US&order_number=714905000003&customerID=50787251453&order_date=2025-02-17T22:05:11-08:00&category=BI&ship_date=2025-02-14T04:05:48-08:00&tracking_numbers=2LS06458000246",
+                  "containerDetails": [
+                    {
+                      "itemId": "2290278",
+                      "quantity": "1.00"
+                    },
+                    {
+                      "itemId": "2633147",
+                      "quantity": "1.00"
+                    }
+                  ]
+                }
+              ],
+              "shipmentLines": [
+                {
+                  "itemId": "2290278",
+                  "shipmentLineId": "1",
+                  "quantity": "1.00",
+                  "transactionId": "714905000003",
+                  "giftCard": []
+                },
+                {
+                  "itemId": "2633147",
+                  "shipmentLineId": "2",
+                  "quantity": "1.00",
+                  "transactionId": "714905000003",
+                  "giftCard": []
+                }
+              ]
+            }
+          ]
+        }
+      }
+    
